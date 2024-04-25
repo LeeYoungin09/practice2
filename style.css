@@ -22,10 +22,14 @@
 }
 /* https://noonnu.cc/font_page/1359 */
 
+body {
+  overflow: hidden;
+}
+
 .wrap {
   min-width: 450px;
-  max-width: 1200px;
-  width: calc(100% - 2rem);
+  max-width: 1000px;
+  width: calc(100% - 12rem);
   margin: auto;
   text-align: center;
 }
@@ -35,7 +39,7 @@
 }
 
 .main img {
-  width: 250px;
+  width: 150px;
 }
 
 .que {
@@ -46,15 +50,15 @@
 }
 
 .que > img {
-  width: 110px;
+  width: 100px;
   cursor: pointer;
 }
 
 .main h1 {
   font-family: BagelFatOne-Regular;
   text-align: center;
-  font-size: 4rem;
-  margin-bottom: 30px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
   color: black;
 }
 
@@ -62,7 +66,7 @@
   cursor: pointer;
   padding: 10px;
   width: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 5px;
   animation: text-effect 3s step-end infinite;
 }
@@ -84,6 +88,7 @@
   transform: translate(-165%, -30%);
   width: 100px;
   animation: twinkle 0.2s ease infinite;
+  z-index: 999;
 }
 
 @keyframes twinkle {
@@ -97,37 +102,65 @@
 
 .random {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  position: relative;
-  padding: 10px 50px 10px 10px;
-}
-
-.random div {
-  width: 400px;
 }
 
 .random h2 {
   font-family: 'TTLaundryGothicB';
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: rgba(233, 174, 46, 0.932);
+}
+
+.random li {
+  /* border: 10px solid red; */
+  width: 45%;
+  position: relative;
+  padding-top: 45%;
+}
+.random li > * {
   position: absolute;
+  top: 0;
+  left: 0;
 }
-
-.text1 {
-  left: 14%;
-  top: 100px;
+.random li > div {
+  /* border: 1px solid red; */
+  text-align: left;
+  z-index: 1;
+  width: 100%;
+  top: 3em;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-.text2 {
-  right: 17%;
-  top: 100px;
+.random li > div strong {
+  display: inline-block;
+  width: 50px;
+}
+.random li > div span {
+  display: inline-block;
+  width: 190px;
+}
+.random li > h2 {
+  /* border: 1px solid red; */
+  z-index: 10;
+  width: 100%;
+  top: 70px;
 }
 
 .random > li > img {
+  /* border: 1px solid red; */
   width: 100%;
+}
+
+.img1 {
+  animation: shake 5s ease infinite;
+}
+
+.img2 {
+  padding: 10px;
+  animation: shake2 5s ease infinite;
 }
 
 @keyframes shake {
@@ -166,40 +199,10 @@
   }
 }
 
-.img1 {
-  margin: 18px;
-  animation: shake 5s ease infinite;
-}
-
-.img2 {
-  margin: 18px;
-  padding: 9px;
-  animation: shake2 5s ease infinite;
-}
-
-.info1 span,
-.info2 span {
+.info1 strong,
+.info2 strong {
   color: rgb(233, 129, 147);
   font-family: 'TTLaundryGothicB';
-}
-
-.info1 {
-  margin-top: 10px;
-  position: absolute;
-  text-align: left;
-  padding-left: 60px;
-  padding-top: 70px;
-  line-height: 1.5rem;
-  background-color: rgb(255, 255, 255, 0.5);
-}
-
-.info2 {
-  position: absolute;
-  text-align: left;
-  padding-left: 70px;
-  padding-top: 70px;
-  line-height: 1.5rem;
-  background-color: rgb(255, 255, 255, 0.5);
 }
 
 .gifimg {
@@ -220,18 +223,16 @@
 
 .gif1 {
   position: absolute;
-  top: 580px;
-  left: 10px;
+  top: 400px;
+  left: 7vw;
   width: 100px;
-  z-index: 999;
 }
 
 .gif2 {
   position: absolute;
-  top: 310px;
-  right: 10px;
+  top: 200px;
+  right: 8vw;
   width: 100px;
-  z-index: 999;
 }
 
 .emph {
@@ -245,40 +246,29 @@
 }
 
 .menu > img {
-  width: 30px;
-  margin: 10px;
+  width: 20px;
+  margin: 2px;
 }
 
 .menu > hr {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .menu > div > h1 {
-  font-weight: bold;
   font-family: 'TTLaundryGothicB';
-}
-
-.menu > div {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 50px 0 50px;
-}
-
-.prev,
-.next {
-  cursor: pointer;
 }
 
 .listCon {
   margin: 5px;
 }
+
 .slides {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   font-size: 11px;
   line-height: 1rem;
-  padding: 20px;
+  padding: 15px;
   background-color: rgba(233, 129, 147, 0.1);
 }
 
@@ -286,43 +276,34 @@
   --swiper-theme-color: rgb(233, 129, 147);
 }
 
-.slides > p > span {
-  font-weight: bold;
+.slides > p > strong {
   color: rgb(233, 129, 147);
 }
 
 footer {
   background-color: pink;
   height: 50px;
-  align-content: center;
   font-size: 11px;
+  align-content: center;
 }
 
-@media (min-width: 650px) and (max-width: 850px) {
-  .info1 span,
-  .info2 span {
-    display: none;
-  }
+@media (min-width: 650px) and (max-width: 880px) {
   .random li {
     color: rgb(233, 129, 147);
   }
+
+  .info1 strong,
+  .info2 strong {
+    display: none;
+  }
+
   .info1,
   .info2 {
-    font-size: small;
+    font-size: 12px;
   }
 
   .emph {
     color: black;
-  }
-
-  .text1 {
-    top: 95px;
-    left: 55px;
-  }
-
-  .text2 {
-    top: 100px;
-    right: 75px;
   }
 }
 
@@ -330,14 +311,16 @@ footer {
   .random {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    gap: 10px;
   }
 
-  .text2 {
-    padding-top: 40px;
-    right: 25%;
-    top: 60%;
+  .random li {
+    width: 450px;
+    border: 1px dotted pink;
+    margin: auto;
+  }
+
+  .info2 {
+    padding-left: 50px;
   }
 
   .img1,
@@ -349,16 +332,6 @@ footer {
   .img4 {
     display: block;
     width: 100px;
-    margin-left: 200px;
-    margin-top: 30px;
-  }
-
-  .info1,
-  .info2 {
-    position: relative;
-    border: 1px dotted pink;
-    padding-bottom: 60px;
-    padding-top: 40px;
   }
 }
 

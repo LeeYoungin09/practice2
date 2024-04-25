@@ -21,6 +21,7 @@ btn.addEventListener('click', async () => {
   h2Elements.forEach((h2) => {
     h2.style.display = 'none';
   });
+
   const img3Element = document.querySelector('.img3');
   if (img3Element) {
     img3Element.parentNode.removeChild(img3Element);
@@ -109,38 +110,18 @@ const createHtml = (data) => {
   let address = data.address || '자료없음';
 
   return `
-         <p class="emph"><span>음식점</span> ${title}</p>
-         <p><span>종류</span> ${category2}</p>
-         <p><span>주소</span> ${address}</p>
-         <p><span>연락처</span> ${tel}</p>
+         <p class="emph"><strong>음식점</strong> <span>${title}</span></p>
+         <p><strong>종&nbsp&nbsp&nbsp류</strong> <span>${category2}</span></p>
+         <p><strong>주&nbsp&nbsp&nbsp소</strong> <span>${address}</span></p>
+         <p><strong>연락처</strong> <span>${tel}</span></p>
     `;
 };
 
 // 리스트
-let pageNo3 = 1;
-
-prev.addEventListener('click', async () => {
-  if (pageNo3 > 0) {
-    pageNo3--;
-    await getLatestlist();
-  } else {
-    pageNo3 = Math.floor(totalCount / 10);
-    await getLatestlist();
-  }
-});
-
-next.addEventListener('click', async () => {
-  if (pageNo3 < totalCount) {
-    pageNo3++;
-    await getLatestlist();
-  } else {
-    pageNo3 = 1;
-    await getLatestlist();
-  }
-});
 
 const getLatestlist = async () => {
   try {
+    const pageNo3 = Math.floor(Math.random() * totalCount);
     const url = new URL(
       `http://api.kcisa.kr/openapi/API_TOU_052/request?serviceKey=${API_KEY}&numOfRows=10&pageNo=${pageNo3}`
     );
@@ -157,26 +138,25 @@ const getLatestlist = async () => {
     renderData(RecommendList);
     // console.log(RecommendList);
   } catch (error) {
-    console.error(error);
+    getLatestlist(); //추가
   }
 };
 
 const renderData = (RecommendList) => {
   if (Array.isArray(RecommendList)) {
     const listHtml = RecommendList.map(
-      (data) => `
+      (data) => `      
           <div class="swiper-slide slides">
-          <p class="emph"><span >음식점</span>&nbsp&nbsp${data.title}</p>
-          <p><span>종&nbsp&nbsp&nbsp류</span>&nbsp&nbsp${data.category2}</p>
-          <p><span>주&nbsp&nbsp&nbsp소</span>&nbsp&nbsp${data.address}</p>
-          <p><span>연락처</span>&nbsp&nbsp${data.tel}</p>
+          <p class="emph"><strong>음식점</strong><span>&nbsp${data.title}</span></p>
+          <p><strong>종&nbsp&nbsp&nbsp류</strong><span>&nbsp${data.category2}</span></p>
+          <p><strong>주&nbsp&nbsp&nbsp소</strong><span>&nbsp${data.address}</span></p>
+          <p><strong>연락처</strong><span>&nbsp${data.tel}</span></p>
           </div>
       `
     ).join('');
     document.querySelector('.listCon').innerHTML = listHtml;
   }
 };
-
 getLatestlist();
 
 //지도
@@ -198,6 +178,7 @@ openModalBtn.onclick = function () {
 closeModalBtn.onclick = function (event) {
   event.stopPropagation();
   modal.style.display = 'none';
+  document.documentElement.style = 'overflow : hidden';
 };
 
 //모달 외부클릭
