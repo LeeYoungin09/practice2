@@ -223,6 +223,7 @@
   top: 580px;
   left: 10px;
   width: 100px;
+  z-index: 999;
 }
 
 .gif2 {
@@ -230,6 +231,7 @@
   top: 310px;
   right: 10px;
   width: 100px;
+  z-index: 999;
 }
 
 .emph {
