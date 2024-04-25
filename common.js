@@ -21,17 +21,14 @@ btn.addEventListener('click', async () => {
   h2Elements.forEach((h2) => {
     h2.style.display = 'none';
   });
-<<<<<<< HEAD
   const img3Element = document.querySelector('.img3');
-  img3Element.style.display = 'none';
+  if (img3Element) {
+    img3Element.parentNode.removeChild(img3Element);
+  }
   const img4Element = document.querySelector('.img4');
-  img4Element.style.display = 'none';
-=======
-  const miniimgElements = document.querySelectorAll('.random > img');
-  miniimgElements.forEach((img) => {
-    img.style.display = 'none';
-  });
->>>>>>> f08017890797f24db0a82fbfa190d08185cccbe6
+  if (img4Element) {
+    img4Element.parentNode.removeChild(img4Element);
+  }
 
   pageNo1 = Math.floor(Math.random() * totalCount) + 1;
   getRandomData1(pageNo1);
