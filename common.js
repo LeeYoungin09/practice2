@@ -21,6 +21,10 @@ btn.addEventListener('click', async () => {
   h2Elements.forEach((h2) => {
     h2.style.display = 'none';
   });
+  const miniimgElements = document.querySelectorAll('.random > img');
+  miniimgElements.forEach((img) => {
+    img.style.display = 'none';
+  });
 
   pageNo1 = Math.floor(Math.random() * totalCount) + 1;
   getRandomData1(pageNo1);
