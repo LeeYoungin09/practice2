@@ -3,7 +3,7 @@ API 주소 : https://www.culture.go.kr/data/openapi/openapiView.do?id=594&catego
 <br>
 <hr>
 <h3>기획목표</h3>
-1. 귀여운 (춘식이)캐릭터를 사용하여 한국 세계음식점 정보를 뽑기형식으로 즐거움 제공. <br>
+1. 귀여운 (춘식이)캐릭터를 이용한 즐거움 <br>
 2. 국내 세계음식점 데이터 정보공유 <br>
 3. 푸드 프로덕트 웹시장의 성장견인 <br><br>
 
