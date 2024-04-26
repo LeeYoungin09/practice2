@@ -13,7 +13,8 @@ API 주소 : https://www.culture.go.kr/data/openapi/openapiView.do?id=594&catego
 <br>
 <hr>
 <h3>핵심가치</h3>
-![image](https://github.com/LeeYoungin09/practice2/assets/162850969/fe574bd0-db4d-4547-a9a8-084a3ca17912)
+![image](https://github.com/LeeYoungin09/practice2/assets/162850969/5bf22efa-ff1e-49a3-a9c1-10680a41f10f)
+
 <br>
 <hr>
 <h3>개발도구</h3>
