@@ -18,7 +18,7 @@ API 주소 : https://www.culture.go.kr/data/openapi/openapiView.do?id=594&catego
 
 <hr>
 <h3>개발도구</h3>
-HTML, CSS, JAVAscript<br>
+HTML, CSS, JavaScript<br>
 <br>
 
 <hr>
@@ -28,3 +28,6 @@ HTML, CSS, JAVAscript<br>
 <br>
 <hr>
 <h3>개발안</h3>
+![개발3](https://github.com/LeeYoungin09/practice2/assets/162850969/1296bad0-9bff-46e7-8387-cf3fe7ccdf11)
+![개발2](https://github.com/LeeYoungin09/practice2/assets/162850969/8a7d739d-b293-4d9f-bc99-9da30ffe93f4)
+![개발1](https://github.com/LeeYoungin09/practice2/assets/162850969/3699e64a-95e8-44b7-a10f-104b41d5a224)
