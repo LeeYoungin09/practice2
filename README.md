@@ -13,7 +13,7 @@ API 주소 : https://www.culture.go.kr/data/openapi/openapiView.do?id=594&catego
 <br>
 <hr>
 <h3>핵심가치</h3>
-![value](https://github.com/LeeYoungin09/practice2/assets/162850969/b07624f2-89d4-480f-abcf-790907ab3cab)
+<a href='https://ifh.cc/v-0vb3j4' target='_blank'><img src='https://ifh.cc/g/0vb3j4.png' border='0'></a>
 <br>
 
 <hr>
@@ -23,10 +23,10 @@ HTML, CSS, JavaScript<br>
 
 <hr>
 <h3>시안</h3>
-![sample](https://github.com/LeeYoungin09/practice2/assets/162850969/a9871f4e-5dde-4ac1-93e4-4ac47042a6a3)
+<a href='https://ifh.cc/v-96qWX7' target='_blank'><img src='https://ifh.cc/g/96qWX7.png' border='0'></a>
 
 <br>
 <hr>
 <h3>개발안</h3>
-![project1](https://github.com/LeeYoungin09/practice2/assets/162850969/211f5ff6-39f4-4e81-83ba-de06381596b6)
-![project2](https://github.com/LeeYoungin09/practice2/assets/162850969/054763b1-b7a7-46da-9b6c-4c04de47dfb3)
+<a href='https://ifh.cc/v-G5j1j0' target='_blank'><img src='https://ifh.cc/g/G5j1j0.jpg' border='0'></a>
+<a href='https://ifh.cc/v-JLVD5S' target='_blank'><img src='https://ifh.cc/g/JLVD5S.png' border='0'></a>
