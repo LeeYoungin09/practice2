@@ -13,7 +13,7 @@ API 주소 : https://www.culture.go.kr/data/openapi/openapiView.do?id=594&catego
 <br>
 <hr>
 <h3>핵심가치</h3>
-![기획1](https://github.com/LeeYoungin09/practice2/assets/162850969/98ed9aa8-550a-4487-ba5a-79b340cb81c0)
+![value](https://github.com/LeeYoungin09/practice2/assets/162850969/b07624f2-89d4-480f-abcf-790907ab3cab)
 <br>
 
 <hr>
@@ -23,10 +23,10 @@ HTML, CSS, JavaScript<br>
 
 <hr>
 <h3>시안</h3>
-![기획2](https://github.com/LeeYoungin09/practice2/assets/162850969/21d4afe7-cddb-4624-a4cb-1240b5ab9f54)
+![sample](https://github.com/LeeYoungin09/practice2/assets/162850969/a9871f4e-5dde-4ac1-93e4-4ac47042a6a3)
 
 <br>
 <hr>
 <h3>개발안</h3>
-![개발3](https://github.com/LeeYoungin09/practice2/assets/162850969/1296bad0-9bff-46e7-8387-cf3fe7ccdf11)
-![개발2](https://github.com/LeeYoungin09/practice2/assets/162850969/8a7d739d-b293-4d9f-bc99-9da30ffe93f4)
+![project1](https://github.com/LeeYoungin09/practice2/assets/162850969/211f5ff6-39f4-4e81-83ba-de06381596b6)
+![project2](https://github.com/LeeYoungin09/practice2/assets/162850969/054763b1-b7a7-46da-9b6c-4c04de47dfb3)
