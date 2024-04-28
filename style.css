@@ -292,8 +292,8 @@ footer {
     color: rgb(233, 129, 147);
   }
 
-  .info1 strong,
-  .info2 strong {
+  .random li strong,
+  .random li strong {
     display: none;
   }
 
