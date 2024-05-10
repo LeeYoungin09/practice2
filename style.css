@@ -323,6 +323,12 @@ footer {
     display: none;
   }
 
+  .img1,
+  .img2 {
+    display: none;
+  }
+
+  
   .img3,
   .img4 {
     display: block;
